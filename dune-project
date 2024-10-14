@@ -8,6 +8,7 @@
 
 (package
  (name fp_lab_1)
+ (allow_empty)
  (depends
   (alcotest :with-test)
   (ocamlformat
