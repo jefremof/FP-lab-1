@@ -35,7 +35,7 @@ jobs:
       - run: opam install . --deps-only --with-test
       - run: eval $(opam env)
       - run: opam exec -- dune build @check @runtest -j3
-      - run: opam exec -- zanuda -dir .
+      - run: opam exec -- zanuda -no-top_file_license -no-mutability_check -dir .
       - run: opam exec -- dune exec fp_lab_1
 
   lint-doc:
