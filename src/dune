@@ -2,4 +2,5 @@
 
 (executable
  (public_name fp_lab_1)
- (name main))
+ (name main)
+ (libraries benchmark))
