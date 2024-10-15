@@ -22,7 +22,7 @@
 (package
  (name fp_lab_1)
 
- (synopsis "Laboratory focused on OCaml basics and principles of functional programming")
+ (synopsis "Laboratory focused on OCaml basics and principles of functional programming.")
 
  (allow_empty)
  (depends
