@@ -1,7 +1,7 @@
 open Common
 
 let generate_products limitA limitB =
-  let modulo_range lim = Seq.ints (-lim) |> Seq.filter (fun i -> i <= lim) in
+  let modulo_range lim = Seq.init ((lim * 2) + 1) (fun i -> i - lim) in
   let parity_check b a = b mod 2 <> a mod 2 in
   let combine b =
     modulo_range limitA
