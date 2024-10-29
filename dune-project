@@ -31,6 +31,7 @@
    (and
     (= 0.26.2)
     :with-dev-setup))
+  (iter (= 1.6))
   benchmark
   zanuda
 ))

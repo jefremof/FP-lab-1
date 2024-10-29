@@ -1,6 +1,28 @@
-(include_subdirs qualified)
+(executable
+ (name main)
+ (public_name fp_lab_1)
+ (libraries fp_lab_1))
 
 (executable
- (public_name fp_lab_1)
- (name main)
- (libraries benchmark))
+ (name test1)
+ (public_name test1)
+ (modes exe)
+ (modules test1 testing)
+ (libraries alcotest fp_lab_1))
+
+(executable
+ (name test2)
+ (public_name test2)
+ (modes exe)
+ (modules test2 testing)
+ (libraries alcotest fp_lab_1))
+
+(rule
+ (alias runtest)
+ (action
+  (run %{dep:test1.exe})))
+
+(rule
+ (alias runtest)
+ (action
+  (run %{dep:test2.exe})))
