@@ -2,9 +2,10 @@ open Common
 
 let generate_products lower upper =
   let rec helper i j lst =
-    if i < lower then lst
-    else if j < lower then helper (i - 1) (i - 1) lst
-    else helper i (j - 1) ((i * j) :: lst)
+    match (i < lower, j < lower) with
+    | true, _ -> lst
+    | _, true -> helper (i - 1) (i - 1) lst
+    | _, false -> helper i (j - 1) ((i * j) :: lst)
   in
   helper upper upper []
 
