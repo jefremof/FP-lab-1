@@ -9,7 +9,7 @@ homepage: "https://github.com/jefremof/FP-lab-1"
 bug-reports: "https://github.com/jefremof/FP-lab-1/issues"
 depends: [
   "dune" {>= "3.16"}
-  "alcotest" {with-test}
+  "alcotest"
   "ocamlformat" {= "0.26.2" & with-dev-setup}
   "iter" {= "1.6"}
   "benchmark"

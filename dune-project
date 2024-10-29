@@ -26,7 +26,7 @@
 
  (allow_empty)
  (depends
-  (alcotest :with-test)
+  alcotest
   (ocamlformat
    (and
     (= 0.26.2)
