@@ -21,7 +21,7 @@ let () =
   print_answers "First problem" borders problem1_answers;
   Printf.printf "\n\n";
   let reps = [ 5000L; 5000L; 100L; 50L; 100L; 100L ] in
-     benchmark_solutions borders problem1_solutions reps;
+  benchmark_solutions borders problem1_solutions reps;
   Printf.printf "\n\n\n"
 
 let () =
