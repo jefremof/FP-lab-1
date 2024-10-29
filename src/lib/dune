@@ -1,0 +1,6 @@
+(include_subdirs qualified)
+
+(library
+ (name fp_lab_1)
+ (public_name fp_lab_1)
+ (libraries benchmark iter))
